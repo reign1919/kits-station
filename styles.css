@@ -1,0 +1,106 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://c.tenor.com/8moQJyvR7egAAAAC/chill.gif') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+    letter-spacing: 2px;
+}
+
+
+.upload-area {
+    border: 4px dashed rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    padding: 50px;
+    width: 80%;
+    max-width: 600px;
+    transition: background 0.3s ease, border 0.3s ease;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+
+.upload-area:hover {
+    background: rgba(0, 0, 0, 0.6);
+    border: 4px dashed rgba(255, 255, 255, 0.6);
+}
+
+.upload-area.dragover {
+    background: rgba(0, 0, 0, 0.8);
+    border: 4px dashed #ffffff;
+}
+
+
+.upload-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #282828;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background 0.3s ease, border 0.3s ease;
+    cursor: pointer;
+}
+
+.upload-button:hover {
+    background-color: #ffffff;
+    color: #282828;
+    border-color: #282828;
+}
+
+
+input[type="file"] {
+    display: none;
+}
+
+
+.audio-station {
+    margin-top: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+
+.audio-player {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.audio-player:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.9);
+}
+
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+    filter: brightness(0.8);
+}
